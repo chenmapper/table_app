@@ -67,10 +67,10 @@ def render_svg(df, positions, cols, rows, cross, table_col, title, title_size):
 # Streamlit App
 # -----------------------------
 
-st.title("DF 通用圓桌/座位圖產生器")
+st.title("DF 通用桌次/座位圖產生器")
 
 uploaded = st.file_uploader("上傳 Excel/CSV 檔", type=["xlsx","csv"])
-cols = st.number_input("列數", min_value=1, max_value=50, value=4)
+cols = st.number_input("列數", min_value=1, max_value=50, value=6)
 rows = st.number_input("行數", min_value=1, max_value=50, value=5)
 cross = st.checkbox("交錯排列", value=False)
 table_col = st.text_input("桌名欄位 (欄位名稱)", value="姓名")
